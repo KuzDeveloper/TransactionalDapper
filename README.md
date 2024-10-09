@@ -21,8 +21,11 @@ a. create the logical layer called "Services" that collect and transform data an
 b. create the "Providers" that only retrieve data from the DataAccess layer, but currently they do not do any mappings or such as that is not the focus here.
 
 - DataAccess: This is a .Net 8 class library. It is responsible to:
+
 a. have the .mdf database file (for simplicity, but you can change it to use cloud db or whatever you need).
+
 b. create the db contexts to have functionalities over tables and to receive the connection and transaction instances from the calling layer.
+
 c. have the factory for creating db connections. Currently only SQL connection is implemented to not overcomplicate the project.
 
 
