@@ -1,5 +1,5 @@
 # Transactional Dapper Project
-This is short .Net Core solution with .Net 8 backend to show how to use Dapper in transactional way.
+This is a short .Net Core solution with .Net 8 backend to show how to use Dapper in transactional way.
 
 The point of this project is only to show how to use Dapper with multiple different tables in a transactional way, where if one operation fails, the others will also not be committed.
 The code itself is made to be easily understandable, but far from being production-ready! The webapi client is a plain simple api that injects the service, the providers and other classes, but its controller is a basic one without any authentication or authorization. You can still use the generated swagger page to test the code and any additional changes you want to experiment with.
