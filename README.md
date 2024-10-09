@@ -15,7 +15,9 @@ Clients:
 Core:
 
 - Business: This is a .Net 8 class library. It is responsible to:
+
 a. create the logical layer called "Services" that collect and transform data and do all the business operations. The BaseService has the transactional Func usage (more on that later).
+
 b. create the "Providers" that only retrieve data from the DataAccess layer, but currently they do not do any mappings or such as that is not the focus here.
 
 - DataAccess: This is a .Net 8 class library. It is responsible to:
